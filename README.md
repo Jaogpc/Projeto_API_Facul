@@ -12,6 +12,7 @@ A chave é enviada particularmente por email quando requirida. Além disso, sua 
 
 <h2>Implementação da chave: </h2>
 Seu requerimento é feito através do seguinte jeito:
+
 ``` ruby
 public class MainActivity extends AppCompatActivity {
 
@@ -20,17 +21,22 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 A key é chamada da seguinte forma na classe ApodApi.java:
+
 ``` ruby
 public interface ApodApi {
     @GET("planetary/apod")
     Call<Apod> getApod(@Query("api_key") String apiKey);
 }
 ```
+
 # Resultado: 
+
 <h2>Tela: </h2>
+
 ![6d22de68-89e2-4328-b6cb-ee64d5744ad9](https://github.com/user-attachments/assets/c4f9994d-725a-4c99-a107-82f2fc686d45)
 
 <h2>Descrição da tela: </h2>
+
  - No topo da tela é exibida a imagem capturada.
  - Abaixo o título da imagem.
  - Por último, um texto sobre a imagem.
